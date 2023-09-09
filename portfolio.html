@@ -15,15 +15,17 @@
 
     <header>
         <div class = "logo"> 
-            <a href="index.html"><img src="img/fanshawe-logo.png" alt="Logo"></a>
+            <h4 class="hidden">Fanshawe Logo</h4>
+            <a href="index.html"><img src="img/fanshawe-logo.png" alt="Fanshaw Logo"></a>
         </div>
 
         <section class= "mobile-menu">
 
-            <h4 class="hidden">Mobile Menu</h4>
+            <h2 class="hidden">Mobile Menu</h2>
             <button class="close-button" onclick="hideHeader()">X</button>
             <nav class="mobile-nav"> 
                 <ul>
+                    <h4 class="hidden">Mobile Navigation</h4>
                     <li><a href="index.html" class="nav-link">Home</a>
                     <li><a href="portfolio.html" class="nav-link">Portfolio</a>
                     <li><a href="project.html" class="nav-link">Project</a>
@@ -33,37 +35,44 @@
         </section>
 
         <section class="desktop-menu">
-            <h4 class="hidden">Desktop Menu</h4>
+            <h2 class="hidden">Desktop Menu</h2>
             <nav class="desktop-nav">
                 <ul class = "desktop-nav-list">
+                    <h4 class="hidden">Desktop Navigation</h4>
                     <li><a href="index.html" class="desktop-nav-link">Home</a>
-                    <li><a href="#" class="desktop-nav-link">Portfolio</a>
-                    <li><a href="#" class="desktop-nav-link">Project</a>
+                    <li><a href="portfolio.html" class="desktop-nav-link">Portfolio</a>
+                    <li><a href="project.html" class="desktop-nav-link">Project</a>
                 </ul>
             </nav>
         </section>
     </header>
+
+    
     <!--Header End-->
     <!--Main Content Start-->
     <main>
         <!--Show Header Feature (Consistent)
-             Has to be outside of <header> because function hides header.
-             NOTE: Styling it header>section>section>nav caused problems, and this was the only way I could find it work-->
+        Has to be outside of <header> because function hides header.
+        NOTE: Styling it header>section>section>nav caused styling problems, and locking the nav to the header was the only way I could find it work-->
         <section>
-            <h4 class="hidden">Show Header Button</h4>
+            <h2 class="hidden">Show Header Button</h2>
             <button class="open-button" onclick="showHeader()"><img src="img/magnifying-glass.png" alt="Navigation"></button>
         </section>
-    
+        <!--Show Header Feature End-->
+        <div class="content-divider"></div>
         <!--Hero Image Start(Consistent)-->
         <section class="hero">
+            <h2 class="hidden">Hero/Title</h2>
             <img src="img/macbook-coding-hero.png" alt="Hero Background">
             <div class="title-of-page">INDUSTRY NIGHT</div>
         </section>
+        <!--Hero Image End-->
+
+        <!-- Enter page content here-->
+
+        <!-- Stop page content here-->
     </main>
 
-    <!-- Enter page content here-->
-    
-    <!-- Stop page content here-->
     <!--Footer Start-->
     <footer>
         <section class="footer-content">

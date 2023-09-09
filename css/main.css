@@ -1,7 +1,8 @@
 /*General Style Elements*/
 
-.hidden{
-    display: none;
+.hidden
+{
+   display: none;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
    font-family: 'Times New Roman', Times, serif;
    text-align: center;
    background-color:#ffffff;
+   user-select: none;
 }
 
 img, embed, object, video, picture 
@@ -17,11 +19,16 @@ img, embed, object, video, picture
    max-width: 100%;
 }
 
+p{
+   font-size: x-large;
+   padding: 10px;
+}
+
 /* Header Elements */
 
 header {
-    background-color: #ffffff;
-    height: 100px;
+   background-color:#ffffff;
+   height: 100px;
 }
 
 /* --- Nav Elements--- */
@@ -33,21 +40,29 @@ header {
    margin-right: 30px;
    top: 0;
    right: 0;
-   background-color: #B00303;
+   background: linear-gradient(to bottom, #B00303, #e00000);
    border-radius: 10px;
    display: none;
-   z-index: 1;
+   z-index: 2;
 }
 
-.logo {
-    max-width: 80px;
-    max-height: 80px;
-    margin-left: 30px;
-    margin-top: 30px;
- }
+.logo 
+{
+   max-width: 80px;
+   max-height: 80px;
+   margin-left: 30px;
+   margin-top: 30px;
+}
 
-.mobile-nav {
-   background-color: #B00303;
+.logo:hover
+{
+   filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.mobile-nav 
+{
+   background: transparent;
 
 }
 
@@ -77,9 +92,10 @@ header {
 
 .nav-link:hover 
 {
-   color:#B00303;
+   color:#000000;
    cursor: pointer;
    text-decoration: none;
+   transition: 0.6s;
 }
 
 .close-button, .open-button 
@@ -96,6 +112,7 @@ header {
    background-color: transparent;
    border: none;
    cursor: pointer;
+   z-index: 1;
 }
 
 .close-button:hover, .open-button:hover 
@@ -150,6 +167,7 @@ header {
    font-family: 'Times New Roman', Times, serif;
    color: #B00303;
    font-weight: bold;
+   font-size: xx-large;
    margin-right: 40px;
    margin-left: 40px;
 
@@ -161,81 +179,149 @@ header {
    right: 80px;
 }
 
+.desktop-nav-link:hover
+{
+   color: black;
+   transition: filter 0.3s;
+}
+
 /*Hero/Title Elements*/
-.hero{
-position: relative;
-text-align: center;
+.hero
+{
+   margin-top: 50px;
+   position: relative;
+   text-align: center;
 }
 
-.hero img {
-    max-width: 100%;
-    height: auto;
+.hero img
+{
+   max-width: 100%;
+   height: auto;
 
 }
 
-.title-of-page {
-    position: absolute;
-    top: 40%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: fit-content;
-    font-size: 50px;
-    background-color: transparent;
-    color:#ffffff;
+.title-of-page 
+{
+   position: absolute;
+   top: 40%;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   width: fit-content;
+   font-size: 50px;
+   background-color: transparent;
+   color:#ffffff;
 }
 
 /*Footer Elements*/
 
 footer {
-    background-color: #B00303;
+   background: linear-gradient(to bottom, #B00303, #8C0202);
 }
 
 .footer-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   gap: 20px; 
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 50px;
     
 }
 
 .fanshawe-info {
-    color:#ffffff;
+   color:#ffffff;
 }
 
 .imd-page{
-    max-height: 100px;
-    max-width: 100px;
-    margin: 0 auto;
+   max-height: 100px;
+   max-width: 100px;
+   margin: 0 auto;
+   margin-top: 30px;
+}
+
+.imd-page:hover{
+   filter: grayscale(100%);
+  transition: filter 0.4s;
 }
 
 .footer-nav {
-    text-align: center;
+   text-align: center;
 }
 
 .social-nav{
-    position: fixed;
-    padding:10px;
-    bottom: 0;
-    right: 0;
+   position: fixed;
+   padding:10px;
+   bottom: 0;
+   right: 0;
 
 }
 
 .social-icon
 {
-    height: 30px;
+   height: 30px;
 }
 
-/*Responsive Nav Menu Styling/Functionality*/
+/*Home/Index Elements*/
+.emphasis{
+   font-size: 50px;
+   color: #B00303;
+}
+.event{
+   text-align: center;
+   margin-left: 20px;
+}
+
+.event-details{
+   font-size: 30px;
+}
+
+#activities {
+   padding: 50px;
+}
+
+.grid-section 
+{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); 
+   grid-gap: 20px; 
+}
+
+.grid-section div {
+   text-align: center;
+}
+
+.time {
+   font-size: 60px;
+   font-weight: 500;
+   margin-top: 50px;
+}
+
+
+.content-divider{
+   background: linear-gradient(to left, #ffffff, #B00303, #ffffff);
+   width: 100%;
+   height: 5px;
+}
+
+/**/
+/*Responsive Nav Menu Styling/Functionality
+When screen is smaller than 1100 (tablet-mobile size), desktop menu disappears
+When screen is bigger than 1100, desktop menu appears and showHeader functionality is now accessible
+In all honesty, I should rename that function to showNav but alas I'm too lost in the sauce*/
 
 @media screen and (max-width: 1100px)
 {
+
+   .grid-section {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
    .desktop-menu
    {
-       display:none !important;
+      display:none !important;
+      transition: filter 1s;
    }
 }
 
@@ -245,7 +331,8 @@ footer {
    .close-button,
    .open-button
    {
-     display: none !important;
+      display: none !important;
+      transition: filter 1s;
    }
 }
 
