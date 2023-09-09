@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="grid">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Home Page - Industry Night</title>
+</head>
+
+<body>
+    <!--Header Start-->
+    <h1 class="hidden">Home Page - Industry Night</h1>
+
+    <header>
+        <div class = "logo"> 
+            <a href="index.html"><img src="img/fanshawe-logo.png" alt="Logo"></a>
+        </div>
+
+        <section class= "mobile-menu">
+
+            <h4 class="hidden">Mobile Menu</h4>
+            <button class="close-button" onclick="hideHeader()">X</button>
+            <nav class="mobile-nav"> 
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <li><a href="project.html" class="nav-link">Project</a>
+                </ul>
+            </nav>
+            
+        </section>
+
+        <section class="desktop-menu">
+            <h4 class="hidden">Desktop Menu</h4>
+            <nav class="desktop-nav">
+                <ul class = "desktop-nav-list">
+                    <li><a href="index.html" class="desktop-nav-link">Home</a>
+                    <li><a href="#" class="desktop-nav-link">Portfolio</a>
+                    <li><a href="#" class="desktop-nav-link">Project</a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!--Header End-->
+    <!--Main Content Start-->
+    <main>
+        <!--Show Header Feature (Consistent)
+             Has to be outside of <header> because function hides header.
+             NOTE: Styling it header>section>section>nav caused problems, and this was the only way I could find it work-->
+        <section>
+            <h4 class="hidden">Show Header Button</h4>
+            <button class="open-button" onclick="showHeader()"><img src="img/magnifying-glass.png" alt="Navigation"></button>
+        </section>
+    
+        <!--Hero Image Start(Consistent)-->
+        <section class="hero">
+            <img src="img/macbook-coding-hero.png" alt="Hero Background">
+            <div class="title-of-page">INDUSTRY NIGHT</div>
+        </section>
+    </main>
+
+    <!-- Enter page content here-->
+    
+    <!-- Stop page content here-->
+    <!--Footer Start-->
+    <footer>
+        <section class="footer-content">
+            <div class="fanshawe-info">
+                <p>
+                    FANSHAWE COLLEGE <br>
+                    School of Digital & Performance Arts <br>
+                    Interactive Media Design <br>
+                    London, Ontario, Canada <br>
+                    N6A 1E9
+                </p>
+            </div>
+            <div class="imd-page">
+                <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img src="img/fanshawe-footer-logo.png" alt="Link to Interactive Media Design Program Page"></a>
+            </div>
+    
+            <div class="footer-nav">
+                <a href="#" class="nav-link">PARTNERSHIPS</a>
+                <a href="#" class="nav-link">CONTACT US</a>
+            </div>
+    
+            <div class="social-list">
+                <a href="#"><img src="img/icon-facebook.png" class="social-icon" alt="Facebook"></a>
+                <a href="#"><img src="img/icon-instagram.png" class="social-icon" alt="Instagram"></a>
+                <a href="#"><img src="img/icon-twitter.png" class="social-icon" alt="Twitter"></a>
+            </div>
+        </section>
+    </footer>
+    <!--Footer End-->
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
