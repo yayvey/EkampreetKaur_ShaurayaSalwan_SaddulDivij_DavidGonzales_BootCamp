@@ -1,3 +1,4 @@
+
 # TO DO: UPDATE README WITH GITHUB BEST PRACTICES IN MIND
  Repository containing the contents for the "Boot Camp" Assignment
 
@@ -22,3 +23,7 @@ TODO: credits goes to Ekampreet Kaur, Shauraya Salwan, Saddul Divij and David Go
 
 License
 TODO: MIT
+
+
+
+
