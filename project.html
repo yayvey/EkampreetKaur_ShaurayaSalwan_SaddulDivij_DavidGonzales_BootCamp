@@ -16,7 +16,7 @@
     <header>
         <div class = "logo"> 
             <h4 class="hidden">Fanshawe Logo</h4>
-            <a href="index.html"><img src="img/fanshawe-logo.png" alt="Fanshaw Logo"></a>
+            <a href="index.html"><img src="img/fanshawe-logo.png" alt="Fanshawe Logo"></a>
         </div>
 
         <section class= "mobile-menu">
@@ -24,8 +24,8 @@
             <h2 class="hidden">Mobile Menu</h2>
             <button class="close-button" onclick="hideHeader()">X</button>
             <nav class="mobile-nav"> 
+                <h4 class="hidden">Mobile Navigation</h4>
                 <ul>
-                    <h4 class="hidden">Mobile Navigation</h4>
                     <li><a href="index.html" class="nav-link">Home</a>
                     <li><a href="portfolio.html" class="nav-link">Portfolio</a>
                     <li><a href="project.html" class="nav-link">Project</a>
@@ -37,8 +37,8 @@
         <section class="desktop-menu">
             <h2 class="hidden">Desktop Menu</h2>
             <nav class="desktop-nav">
+                <h4 class="hidden">Desktop Navigation</h4>
                 <ul class = "desktop-nav-list">
-                    <h4 class="hidden">Desktop Navigation</h4>
                     <li><a href="index.html" class="desktop-nav-link">Home</a>
                     <li><a href="portfolio.html" class="desktop-nav-link">Portfolio</a>
                     <li><a href="project.html" class="desktop-nav-link">Project</a>
@@ -53,7 +53,7 @@
     <main>
         <!--Show Header Feature (Consistent)
         Has to be outside of <header> because function hides header.
-        NOTE: Styling it header>section>section>nav caused styling problems, and locking the nav to the header was the only way I could find it work-->
+        NOTE: Styling it header>section>section>nav caused styling problems, and locking the nav to the header was the only way I could find it work so whatever my guy-->
         <section>
             <h2 class="hidden">Show Header Button</h2>
             <button class="open-button" onclick="showHeader()"><img src="img/magnifying-glass.png" alt="Navigation"></button>
@@ -67,16 +67,58 @@
             <div class="title-of-page">PROJECT</div>
         </section>
         <!--Hero Image End-->
-
+        <br>
         <!-- Enter page content here-->
-        <div id="testimonialOutput"></div>
+        <section>
+            <div class="small-content-divider"></div>
+            <h2 class="emphasis">Testimonials</h2>
+            Refresh to generate new testimonial!
+            <br><br>
+            <div class="small-content-divider"></div>
+        </section>
+        <!-- Functional Testimonial Output based on RNG (Check js/testimonials.js for functionality)-->
+        <br>
+        <section id="testimonial-output">
+            <h2 class="hidden">Testimonial Output</h2>
+            <div id="testimonialOutput"></div>
+        </section>
 
+        <br>
+        <div class="content-divider"></div>
+        <h2 class="emphasis">Case Studies</h2>
+        <div class="small-content-divider"></div>
+        <br>
+        <!-- Case Studies-->
+        <section class="grid-section">
+            <h2 class="hidden">Case Studies</h2>
+            <section class="case-studies">
+                <div class="emphasis">1.</div><h2>Project Overview</h2><p>Interactive media design is the ultimate time saver for small business owners. A game changer.</p>
+            </section>
+            
+            <section class="case-studies">
+                <div class="emphasis">2.</div><h2>Client Testimonials</h2><p>It makes us more productive and gets the job done in a fraction of the time.</p>
+            </section>
+            <section class="case-studies">
+                <div class="emphasis">3.</div><h2>Challenges Faced</h2><p>Many media design projects have tight deadlines whichleads to stress and pressure.</p>
+            </section>
+            <section class="case-studies">
+                <div class="emphasis">4.</div><h2>Solutions</h2><p>By showing our portfolio and selliing design services will target the needs for the audience.</p>
+            </section>
+            <section class="case-studies">
+                <div class="emphasis">5.</div><h2>Process</h2><p>Design a visually appealing layout that aligns with your brand identity. Ensure your design is responsive and mobile-friendly to accommodate various devices</p>
+            </section>
+            <section class="case-studies">
+                <div class="emphasis">6.</div><h2>Outcomes</h2><p>Investing time and effort into planning, designing, and maintaining your media design website is crucial. Regular updates, security measures, and a Commitment to user experience is essential for a successful online presence in the field of media design.</p>
+            </section>
+        </section>
+        <br><br>
         <!-- Stop page content here-->
     </main>
 
     <!--Footer Start-->
     <footer>
         <section class="footer-content">
+            <h2 class="hidden">Footer</h2>
             <div class="fanshawe-info">
                 <p>
                     FANSHAWE COLLEGE <br>
@@ -86,6 +128,7 @@
                     N6A 1E9
                 </p>
             </div>
+            <!--LINK TO INTERACTING MEDIA DESIGN PAGE-->
             <div class="imd-page">
                 <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img src="img/fanshawe-footer-logo.png" alt="Link to Interactive Media Design Program Page"></a>
             </div>

@@ -16,7 +16,7 @@
     <header>
         <div class = "logo"> 
             <h4 class="hidden">Fanshawe Logo</h4>
-            <a href="index.html"><img src="img/fanshawe-logo.png" alt="Fanshaw Logo"></a>
+            <a href="index.html"><img src="img/fanshawe-logo.png" alt="Fanshawe Logo"></a>
         </div>
 
         <section class= "mobile-menu">
@@ -24,8 +24,8 @@
             <h2 class="hidden">Mobile Menu</h2>
             <button class="close-button" onclick="hideHeader()">X</button>
             <nav class="mobile-nav"> 
+                <h4 class="hidden">Mobile Navigation</h4>
                 <ul>
-                    <h4 class="hidden">Mobile Navigation</h4>
                     <li><a href="index.html" class="nav-link">Home</a>
                     <li><a href="portfolio.html" class="nav-link">Portfolio</a>
                     <li><a href="project.html" class="nav-link">Project</a>
@@ -37,8 +37,8 @@
         <section class="desktop-menu">
             <h2 class="hidden">Desktop Menu</h2>
             <nav class="desktop-nav">
+                <h4 class="hidden">Desktop Navigation</h4>
                 <ul class = "desktop-nav-list">
-                    <h4 class="hidden">Desktop Navigation</h4>
                     <li><a href="index.html" class="desktop-nav-link">Home</a>
                     <li><a href="portfolio.html" class="desktop-nav-link">Portfolio</a>
                     <li><a href="project.html" class="desktop-nav-link">Project</a>
@@ -69,6 +69,7 @@
         <!--Hero Image End-->
 
         <!-- Enter page content here-->
+
         <br>
         <div class="small-content-divider"></div>
         <h2 class="emphasis">Categories</h2>
@@ -79,50 +80,51 @@
             
             <h2 class="hidden">Student Portfolio Categories</h2>
             
-            <a href="portfolio.html">
-                <img src="img/web-development.png" alt=" ">
+            <a href="portfolio.html" class="categories">
+                <img src="img/web-development.png" alt="Surreal graphic of computer exuding web development auta">
                 <h2 class="category">Web Development</h2>
             </a>
 
             
-            <a href="portfolio.html">
-                <img src="img/mobile-app-development.png" alt=" ">
+            <a href="portfolio.html" class="categories">
+                <img src="img/mobile-app-development.png" alt="Conceptual picture of AR vision using mobile">
                 <h2 class="category">Mobile App Development</h2>
             </a>
         
         
-            <a href="portfolio.html">
-                <img src="img/game-development.png" alt=" ">
+            <a href="portfolio.html" class="categories">
+                <img src="img/game-development.png" alt="Graphic of cartoon man gaming">
                 <h2 class="category">Game Development</h2>
             </a>
 
-            <a href="portfolio.html">
-                <img src="img/graphics-design.png" alt=" ">
+            <a href="portfolio.html" class="categories">
+                <img src="img/graphics-design.png" alt="Graphic of computer surrounded with graphic design elements">
                 <h2 class="category">Graphics Design</h2>
             </a>
         
         
-            <a href="portfolio.html">
-                <img src="img/sound-design.png" alt=" ">
-                <h2 class="category">Sound Design</h2>
+            <a href="portfolio.html" class="categories">
+                <img src="img/sound-design.png" alt="Picture of man working on sound/mp4 files">
+                <h2 class="category">Video Production</h2>
             </a>
 
-            <a href="portfolio.html">
-                <img src="img/digital-marketing.png" alt=" ">
+            <a href="portfolio.html" class="categories">
+                <img src="img/digital-marketing.png" alt="Graphic representing digital marketing cycle">
                 <h2 class="category">Digital Marketing</h2>
             </a>
 
 
         </section>
 
-        <div class="small-content-divider"></div>
-        <br>
+        <!-- Functional Student Name Output based on RNG (Check js/studentshowcase.js for functionality)-->
         <section id="student-showcase">
-            <h2>Student Showcase!</h2>
-            Refresh to generate new student.
-            <div id="studentOutput"></div>
-            <br>
-            <div class="portfolio"><a href="portfolio.html"><img src="img/icon-portfolio.png" alt=""></a></div>
+            <a href="portfolio.html">
+                <h2 class="emphasis">Student Showcase</h2>
+                Refresh to generate new student.
+                <div id="studentOutput"></div>
+                <br>
+                <div class="portfolio"><img src="img/icon-portfolio.png" alt="Link to Student Portfolio"></div>
+                </a>
         </section>
         <br>
         <br>
@@ -134,6 +136,7 @@
     <!--Footer Start-->
     <footer>
         <section class="footer-content">
+            <h2 class="hidden">Footer</h2>
             <div class="fanshawe-info">
                 <p>
                     FANSHAWE COLLEGE <br>
@@ -143,6 +146,7 @@
                     N6A 1E9
                 </p>
             </div>
+            <!--LINK TO INTERACTING MEDIA DESIGN PAGE-->
             <div class="imd-page">
                 <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img src="img/fanshawe-footer-logo.png" alt="Link to Interactive Media Design Program Page"></a>
             </div>

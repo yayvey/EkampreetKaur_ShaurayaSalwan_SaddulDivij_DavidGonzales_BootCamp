@@ -6,8 +6,6 @@ const contactTitle = ["Fanshawe Professor", "Full-Time Student", "Graduate, Grap
 
 
 //Establishing array called contactTestimonials, which will store a long string (testimonial) and output it with the corressponding array box in contactList. 
-// It is assumed that I will be getting the testimonials from the "contact us" page, and will structure the contact us page to fit the information given on the testimonials 
-//But since that's not asked, and since I don't have time to research or think of a system, I will not be building that functionality and just use pre-made testimonials
 
 const contactTestimonials = [
     "Outstanding work! The future of Fanshawe-born web designers is looking bright! This is a talented class, and I can't wait to see what their future holds!",
@@ -15,14 +13,20 @@ const contactTestimonials = [
     "I remember when my dreams were just starting in the Fanshawe program! I am excited to see what this class has up their sleeves!"
 ]
 
+
+//RNG reaching up to 3 to decide which number will be chosen between 0-2
 const testimonialRandom = Math.floor(Math.random() * 3);
+
+//Establishing constants contact, title, and testimonial to attach to the RNG function
 
 const contact = contactList[testimonialRandom];
 const title = contactTitle[testimonialRandom];
 const testimonial = contactTestimonials[testimonialRandom];
 
+//Establishing testimonialOutput to find the id "testimonialOutput" in HTML and target it
 const testimonialOutput = document.getElementById("testimonialOutput");
 
+//Establishing testimonialContant to store a string, and aspects of this string can be influenced by the outcomes of the math going on in contact, title, and testimonial.
 const testimonialContent = `
     <div class="contact-box">
         <h2>${contact}</h2>
@@ -31,4 +35,5 @@ const testimonialContent = `
     </div>
 `;
 
+//id=testimonialOutput will output the testimonial content within the HTML container
 testimonialOutput.innerHTML = testimonialContent;

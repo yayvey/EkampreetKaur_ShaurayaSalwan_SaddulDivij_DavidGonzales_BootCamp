@@ -24,6 +24,25 @@ p{
    padding: 10px;
 }
 
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.content-divider
+{
+   background: linear-gradient(to left, #ffffff, #B00303, #ffffff);
+   width: 100%;
+   height: 5px;
+}
+.small-content-divider
+{
+   background: linear-gradient(to left, #ffffff, #B00303, #ffffff);
+   width: 50%;
+   height: 5px;
+   margin: 0 auto;
+}
+
 /* Header Elements */
 
 header {
@@ -292,26 +311,17 @@ footer {
    text-align: center;
 }
 
+.grid-section section {
+   margin: 0 auto;
+}
+
 .time {
    font-size: 60px;
    font-weight: 500;
    margin-top: 50px;
 }
 
-
-.content-divider
-{
-   background: linear-gradient(to left, #ffffff, #B00303, #ffffff);
-   width: 100%;
-   height: 5px;
-}
-.small-content-divider
-{
-   background: linear-gradient(to left, #ffffff, #B00303, #ffffff);
-   width: 50%;
-   height: 5px;
-   margin: 0 auto;
-}
+/*Portfolio Page Stylings*/
 
 .portfolio {
    padding: 10px;
@@ -320,18 +330,49 @@ footer {
    margin: 0 auto;
 }
 
-/**/
+.categories:hover
+{
+   filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+#student-showcase, #testimonial-output
+{
+   border: 2px solid #000000;
+   padding: 10px;
+   width:300px;
+   margin: 0 auto;
+   
+   background: linear-gradient(to top, #a75858, #bdbdbd);
+}
+
+#student-showcase:hover{
+   filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+/*Project Page Stylings*/
+
+.case-studies{
+   max-width: 400px;
+   height: 400px;
+   border: 2px solid #000000;
+   background: linear-gradient(to top, #ffffff, #bdbdbd);
+}
+
 /*Responsive Nav Menu Styling/Functionality
 When screen is smaller than 1100 (tablet-mobile size), desktop menu disappears
 When screen is bigger than 1100, desktop menu appears and showHeader functionality is now accessible
 In all honesty, I should rename that function to showNav but alas I'm too lost in the sauce*/
 
-@media screen and (max-width: 1100px)
-{
-
+@media screen and (max-width: 800px){
    .grid-section {
       grid-template-columns: repeat(1, 1fr);
    }
+
+}
+
+@media screen and (max-width: 1100px)
+{
 
    .desktop-menu
    {
