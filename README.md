@@ -13,7 +13,7 @@ Link to IMD program page<br>
 Video promoting IMD program<br><br>
 
 ### I made sure to:<br>
-Pull a list of student names/portfolios with an array (studentshowcase.js)<br>
+Pull a list of student names with an array (studentshowcase.js) and output with the concept of generating a student number within a database to randomly showcase<br>
 Pull a list of testimonial + name + title in different arrays to string into 1 output. (testimonial.js)<br>
 Validate HTML<br><br>
 
