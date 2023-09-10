@@ -39,5 +39,12 @@ main.css<br><br>
 Contains 23 images being used as site content.
 
 #### In includes folder: <br>
-Contains 
+Contains promotional video<br>
+promotional-video.mp4<br><br>
+
+#### In js folder:<br>
+Contains 3 .js files for functionality<br>
+main.js<br>
+testimonials.js<br>
+studentshowcase.js<br>
 
